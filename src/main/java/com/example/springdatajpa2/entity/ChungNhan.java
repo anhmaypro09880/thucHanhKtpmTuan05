@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Getter
 @Builder
 @Table(name = "chungnhan")
-public class ChungNhan {
+public class ChungNhan implements  Serializable {
     @Id
     @JoinColumn(name = "MaNV", referencedColumnName = "MaNV", insertable = false, updatable = false)
     @ManyToOne(optional = false)

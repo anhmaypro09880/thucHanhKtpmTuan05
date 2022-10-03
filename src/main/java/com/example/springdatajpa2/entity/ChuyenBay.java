@@ -10,6 +10,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.sql.Time;
 
 @Entity
@@ -18,7 +19,7 @@ import java.sql.Time;
 @Data
 @Builder
 @Table(name = "chuyenbay")
-public class ChuyenBay {
+public class ChuyenBay implements Serializable {
     @Id
 
     private String maCB;
